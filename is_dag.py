@@ -1,6 +1,9 @@
 from collections import defaultdict, deque
 
 def is_dag(nodes, edges):
+    if(nodes.length < 2): 
+        return True
+
     # Create adjacency list and in-degree count
     adj_list = defaultdict(list)
     in_degree = defaultdict(int)
